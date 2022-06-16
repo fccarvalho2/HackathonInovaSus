@@ -1,0 +1,8 @@
+elsapy
+googletrans==4.0.0rc1
+json
+numpy
+pandas
+pymed
+re
+vaderSentiment
