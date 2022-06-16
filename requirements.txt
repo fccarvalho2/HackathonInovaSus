@@ -1,8 +1,14 @@
+dash
 elsapy
 googletrans==4.0.0rc1
+ipympl
+ipyvolume
 json
+matplotlib
 numpy
 pandas
+plotly
 pymed
 re
 vaderSentiment
+voila
