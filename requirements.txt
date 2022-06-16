@@ -8,6 +8,5 @@ numpy
 pandas
 plotly
 pymed
-re
 vaderSentiment
 voila
