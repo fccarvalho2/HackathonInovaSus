@@ -3,6 +3,7 @@ elsapy
 googletrans==4.0.0rc1
 ipympl
 ipyvolume
+jupyter-dash
 matplotlib
 numpy
 pandas
