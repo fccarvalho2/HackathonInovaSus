@@ -1,2 +1,2 @@
-# HackathonInovaSus
-Dados para o Hackathon Inovadados Sus
+# Hackathon Inovadados SUS
+Dados para o Hackathon Inovadados SUS
