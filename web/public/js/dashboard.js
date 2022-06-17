@@ -43,9 +43,9 @@
           ],
           lineTension: 0,
           backgroundColor: 'transparent',
-          borderColor: '#007bff',
+          borderColor: '#1e90ff',
           borderWidth: 4,
-          pointBackgroundColor: '#007bff'
+          pointBackgroundColor: '#1e90ff'
         }]
       },
       options: {
@@ -85,11 +85,11 @@ const grafico15 = new Chart(onde15, {
         ]
       ,
       lineTension: 0,
-      backgroundColor: ['purple', '#007bff', '#FF0000', '#007bff', '#FF0000' ],
-      fill: '#007bff',
-      //borderColor: '#007bff',
+      backgroundColor: ['grey', '#1e90ff', '#ffa500', '#1e90ff', '#ffa500' ],
+      fill: '#1e90ff',
+      //borderColor: '#1e90ff',
       //borderWidth: 4,
-      pointBackgroundColor: '#007bff'
+      pointBackgroundColor: '#1e90ff'
     }]
   },
   options: {
@@ -119,11 +119,11 @@ const grafico15 = new Chart(onde15, {
             [303,140,126,96,83,15,12,5,3]
           ,
           lineTension: 0,
-          backgroundColor: '#007bff',
-          fill: '#007bff',
-          //borderColor: '#007bff',
+          backgroundColor: '#1e90ff',
+          fill: '#1e90ff',
+          //borderColor: '#1e90ff',
           //borderWidth: 4,
-          pointBackgroundColor: '#007bff'
+          pointBackgroundColor: '#1e90ff'
         }]
       },
       options: {
@@ -147,17 +147,53 @@ const grafico15 = new Chart(onde15, {
       data: {
         labels: [1.3922,  2.6724,  3.9526,  5.2328,  6.513 ,  7.7932,
           9.0734, 10.3536, 11.6338, 12.914 , 14.1942, 15.4744, 16.7546,
-         18.0348, 19.315 , 20.5952, 21.8754, 23.1556, 24.4358, 25.716 ],
+         18.0348, 19.315 , 20.5952, 21.8754, 23.1556, 24.4358, 25.716 ].map(i=>i.toFixed(1)),
         datasets: [{
           data: 
            [475., 275.,  97.,  54.,   8.,  13.,   6.,  11.,   4.,   0.,   1.,
             0.,  13.,   2.,   0.,   0.,   0.,   0.,   1.,  41.],
           lineTension: 0,
-          backgroundColor: '#007bff',
-          fill: '#007bff',
-          //borderColor: '#007bff',
+          backgroundColor: '#1e90ff',
+          fill: '#1e90ff',
+          //borderColor: '#1e90ff',
           //borderWidth: 4,
-          pointBackgroundColor: '#007bff'
+          pointBackgroundColor: '#1e90ff'
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false
+            }
+          }]
+        },
+        legend: {
+          display: false
+        }
+      }
+    })
+
+
+    // gráfico 3,5 - ---------------------------------------
+    const onde35 = document.getElementById('g35')
+    const grafico35 = new Chart(onde35, {
+      type: 'bar',
+      data: {
+        labels: [1.8212,  3.5124,  5.2036,  6.8948,  8.586 , 10.2772,
+          11.9684, 13.6596, 15.3508, 17.042 , 18.7332, 20.4244, 22.1156,
+          23.8068, 25.498 , 27.1892, 28.8804, 30.5716, 32.2628, 33.954 ,
+          35.6452, 37.3364, 39.0276, 40.7188, 42.41  ].map(i=>i.toFixed(1)),
+        datasets: [{
+          data: [ 84., 195., 209., 105.,  81., 119.,  38.,  24.,  76.,   6.,  14.,
+            5.,   2.,   0.,   0.,   1.,   0.,   0.,  39.,   0.,   1.,   0.,
+            0.,   0.,   2.],
+          lineTension: 0,
+          backgroundColor: '#1e90ff',
+          fill: '#1e90ff',
+          //borderColor: '#1e90ff',
+          //borderWidth: 4,
+          pointBackgroundColor: '#1e90ff'
         }]
       },
       options: {
@@ -188,7 +224,7 @@ const grafico15 = new Chart(onde15, {
             894.1 ,  919.56,  945.02,  970.48,  995.94, 1021.4 , 1046.86,
            1072.32, 1097.78, 1123.24, 1148.7 , 1174.16, 1199.62, 1225.08,
            1250.54, 1276.  
-        ],
+        ].map(i=>i.toFixed(0)),
         datasets: [{
           data: [
             77, 131, 158, 122, 101, 132,  33,  85,   9,  16,   8,  15,   7,
@@ -197,11 +233,9 @@ const grafico15 = new Chart(onde15, {
               0,   0,   0,  39,   0,   0,   0,   0,   0,   0,   2
           ],
           lineTension: 0,
-          backgroundColor: '#007bff',
-          fill: '#007bff',
-          //borderColor: '#007bff',
-          //borderWidth: 4,
-          pointBackgroundColor: '#007bff'
+          backgroundColor: '#1e90ff',
+          fill: '#1e90ff',
+          pointBackgroundColor: '#1e90ff'
         }]
       },
       options: {
@@ -279,7 +313,7 @@ const grafico15 = new Chart(onde15, {
             49,
             44
           ],
-          backgroundColor: '#007bff'
+          backgroundColor: '#1e90ff'
         }]
       },
       options: {
@@ -356,11 +390,11 @@ const grafico15 = new Chart(onde15, {
             20
           ],
           lineTension: 0,
-          backgroundColor: '#007bff',
-          fill: '#007bff',
-          //borderColor: '#007bff',
+          backgroundColor: '#1e90ff',
+          fill: '#1e90ff',
+          //borderColor: '#1e90ff',
           //borderWidth: 4,
-          pointBackgroundColor: '#007bff'
+          pointBackgroundColor: '#1e90ff'
         }]
       },
       options: {
@@ -382,40 +416,39 @@ const grafico15 = new Chart(onde15, {
     // gráfico 8 - ---------------------------------------
 const onde8 = document.getElementById('g8')
 const grafico8 = new Chart(onde8, {
-  type: 'bar',
+  type: 'horizontalBar',
   data: {
     labels: 
-    ['nitazoxanide', 'tocilizumab', 'azithromycin', 'anakinra', 'apixaban', 'ivermectin', 'heparin', 'hydroxychloroquine', 'doxycycline', 'remdesivir', 'baricitinib', 'colchicine', 'methylprednisolone', 'sitagliptin', 'leflunomide', 'ruxolitinib', 'sarilumab', 'alteplase', 'argatroban', 'bivalirudin', 'chloroquine', 'midazolam', 'propofol', 'ketamine', 'cisatracurium', 'fentanyl', 'ribavirin', 'meropenem', 'atazanavir', 'dipyridamole', 'famotidine', 'ibuprofen', 'dexamethasone', 'tenofovir', 'prednisolone', 'estradiol', 'metformin', 'lopinavir', 'ritonavir', 'oseltamivir', 'natalizumab', 'ganciclovir', 'quercetin']
+    ['hydroxychloroquine', 'tocilizumab', 'azithromycin', 'chloroquine', 'remdesivir', 'methylprednisolone', 'doxycycline', 'ribavirin', 'nitazoxanide', 'heparin', 'ivermectin', 'argatroban', 'anakinra', 'apixaban', 'baricitinib', 'colchicine', 'sitagliptin', 'leflunomide', 'ruxolitinib', 'sarilumab', 'alteplase', 'bivalirudin', 'propofol', 'ketamine', 'cisatracurium', 'fentanyl', 'meropenem', 'atazanavir', 'famotidine', 'dipyridamole', 'midazolam', 'metformin', 'dexamethasone', 'tenofovir', 'prednisolone', 'estradiol', 'ganciclovir', 'ibuprofen', 'ritonavir', 'oseltamivir', 'natalizumab', 'lopinavir', 'quercetin']
     ,
     datasets: [{
+      stack: "Stack 0",
       data: 
-      [2, 7, 5, 1, 1, 2, 2, 8, 2, 4, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      lineTension: 0,
-      backgroundColor: '#007bff',
-      fill: '#007bff',
-      //borderColor: '#007bff',
-      //borderWidth: 4,
-      pointBackgroundColor: '#007bff'
+      [8, 7, 5, 4, 4, 3, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      backgroundColor: '#1e90ff'
     },
     {
-      data:[0, -4, -6, 0, -1, -1, -6, -12, 0, -6, -1, 0, -3, 0, -1, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -3, -1, -1, -1],
-      backgroundColor: '#ff0000'
+      stack: "Stack 0",
+      data:[12, 4, 6, 3, 6, 3, 0, 0, 0, 6, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1].map(i=>-i),
+      backgroundColor: '#ffa500'
     }
   ]
   },
   options: {
     scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }]
+      x:{
+        max: 12,
+        min: -12
+      }
     },
     legend: {
       display: false
     }
   }
 })
+
+
+
 
 
 })() // fim

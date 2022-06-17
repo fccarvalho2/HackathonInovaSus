@@ -100,19 +100,25 @@
   </div>
 
   <!-- grafico -->
-  <div class="col-4 my-2 col-xxl-4">
+  <div class="col-6 my-2 col-xxl-6">
     <h4>Publicações por Qualis (652/2147)</h4>
     <canvas class="my-4 w-100" id="g2" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
-  <div class="col-4 my-2 col-xxl-4">
+  <div class="col-6 my-2 col-xxl-6">
     <h4>Publicações por fator de impacto (1145/2147)</h4>
     <canvas class="my-4 w-100" id="g3" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
-  <div class="col-4 my-2 col-xxl-4">
+  <div class="col-6 my-2 col-xxl-6">
+    <h4>Publicações por média de citações (últimos 3 anos)</h4>
+    <canvas class="my-4 w-100" id="g35" width="900" height="450"></canvas>
+  </div>
+
+  <!-- grafico -->
+  <div class="col-4 my-6 col-xxl-6">
     <h4>Publicações por h-index (1145/2147)</h4>
     <canvas class="my-4 w-100" id="g4" width="900" height="450"></canvas>
   </div>
@@ -132,6 +138,10 @@
   <!-- grafico -->
   <div class="col-12 my-2 col-xxl-12">
     <h4>Análise do processamento de linguagem natural (72)</h4>
+    <p>
+      <span style="background:#ffa500" class="p-1 px-3 m-2 rounded"> </span> Tendência desfavorável/neutro
+      <span style="background:#1e90ff" class="p-1 px-3 m-2 rounded"> </span> Tendência favorável
+    </p>
     <canvas class="my-4 w-100" id="g8" width="900" height="450"></canvas>
   </div>
 
