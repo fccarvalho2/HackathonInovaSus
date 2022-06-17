@@ -3,7 +3,7 @@ $(()=>{
     // parâmetros globais
     const parametros = {
         dados: null,
-        colunas: null,
+        colunas: ["titulo", 	"link",	"data",	"tipo",	"issn",	"journal_name",	"qualis",	"fator_impacto_jrc",	"hindex",	"media_citacao_3_anos",	"abstract",	"categorias"],
         onde: '#minha_tabela',
         tabela: $().DataTable(),
         arquivos: ['artigos.csv'],
@@ -30,13 +30,20 @@ $(()=>{
 
         // selecionar colunas
         colunas = colunas.map(d => ({ title: d }))
-
+        //console.log(dados)
         // ativar datatable
         parametros.tabela = $(onde).DataTable({
             "data": dados,
-            "columns": colunas,
-            "order": [[0, 'asc']] // ordena pela coluna 0
+            "columns": 
+            colunas,"columnDefs": [
+                { "width": "35%", "targets": 0 },
+                { "width": "15%", "targets": 5 }
+              ],
+            "order": [[3, 'desc']] // ordena pela coluna 0
         })
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     }
 
     // listar arquivos --> INÍCIO
@@ -99,10 +106,28 @@ $(()=>{
             linha = linha.replace("\r","")
 
             // separa as células
-            celulas = linha.split(";")
+            celulas = linha.split("\t")
+
+            //[0'titulo', 1'link', 2'data', 3'tipo', 4'doi', 5'issn', 6'issn_formatado', 7'journal_name', 8'qualis', 9'fator_impacto_jrc', 10'hindex', 11'media_citacao_3_anos', 12'abstract', 13'categorias', 14'categories']
+
+
+            resumo=celulas[12].replace(/[^a-z0-9 ,\.]/gi,'');
+            if(resumo == ''){
+                resumo="Resumo não disponível";
+            }
+            cf = [] //celulas_filtradas
+            cf.push(
+                '<a data-bs-trigger="hover focus" data-bs-toggle="popover" target="blank" title="Resumo" data-bs-content="'+resumo+'" href="'+celulas[1]+'">'+celulas[0]+'</a>',
+                celulas[7]+" ("+celulas[6]+")", 
+                celulas[8], // qualis
+                celulas[10], // hindex
+                celulas[9], // jrc - fator impacto
+                celulas[13] // categorias
+            )
+            //console.log(cf)
 
             // salva células
-            dados_tabelados.push(celulas)
+            dados_tabelados.push(cf)
         }
 
         return dados_tabelados
@@ -129,6 +154,7 @@ $(()=>{
 
     // executa
     iniciar()
+
     
 })
 
