@@ -95,7 +95,7 @@
 
   <!-- grafico -->
   <div class="col-6 my-2 col-xxl-6">
-    <h4>Publicações por Qualis</h4>
+    <h4>Publicações por Qualis (652/2147)</h4>
     <canvas class="my-4 w-100" id="g2" width="900" height="450"></canvas>
   </div>
 
