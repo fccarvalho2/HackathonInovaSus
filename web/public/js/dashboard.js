@@ -62,7 +62,50 @@
       }
     })
 
-    
+// gráfico 1,5 - ---------------------------------------
+const onde15 = document.getElementById('g15')
+const grafico15 = new Chart(onde15, {
+  type: 'bar',
+  data: {
+    labels: 
+      ["Total",
+        "Com impacto (FI)",
+        "Sem impacto (FI)",
+        "Com Qualis",
+        "Sem Qualis"
+        ]
+    ,
+    datasets: [{
+      data: 
+        [2147,
+          1145,
+          1002,
+          1364,
+          783,
+        ]
+      ,
+      lineTension: 0,
+      backgroundColor: ['purple', '#007bff', '#FF0000', '#007bff', '#FF0000' ],
+      fill: '#007bff',
+      //borderColor: '#007bff',
+      //borderWidth: 4,
+      pointBackgroundColor: '#007bff'
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    }
+  }
+})
+
     // gráfico 2 - ---------------------------------------
     const onde2 = document.getElementById('g2')
     const grafico2 = new Chart(onde2, {
@@ -334,6 +377,46 @@
         }
       }
     })
+
+
+    // gráfico 8 - ---------------------------------------
+const onde8 = document.getElementById('g8')
+const grafico8 = new Chart(onde8, {
+  type: 'bar',
+  data: {
+    labels: 
+    ['nitazoxanide', 'tocilizumab', 'azithromycin', 'anakinra', 'apixaban', 'ivermectin', 'heparin', 'hydroxychloroquine', 'doxycycline', 'remdesivir', 'baricitinib', 'colchicine', 'methylprednisolone', 'sitagliptin', 'leflunomide', 'ruxolitinib', 'sarilumab', 'alteplase', 'argatroban', 'bivalirudin', 'chloroquine', 'midazolam', 'propofol', 'ketamine', 'cisatracurium', 'fentanyl', 'ribavirin', 'meropenem', 'atazanavir', 'dipyridamole', 'famotidine', 'ibuprofen', 'dexamethasone', 'tenofovir', 'prednisolone', 'estradiol', 'metformin', 'lopinavir', 'ritonavir', 'oseltamivir', 'natalizumab', 'ganciclovir', 'quercetin']
+    ,
+    datasets: [{
+      data: 
+      [2, 7, 5, 1, 1, 2, 2, 8, 2, 4, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      lineTension: 0,
+      backgroundColor: '#007bff',
+      fill: '#007bff',
+      //borderColor: '#007bff',
+      //borderWidth: 4,
+      pointBackgroundColor: '#007bff'
+    },
+    {
+      data:[0, -4, -6, 0, -1, -1, -6, -12, 0, -6, -1, 0, -3, 0, -1, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -3, -1, -1, -1],
+      backgroundColor: '#ff0000'
+    }
+  ]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    }
+  }
+})
+
 
 })() // fim
   

@@ -1,5 +1,5 @@
 @extends('template')
-@section('titulo', 'PUS')
+@section('titulo', 'Novo Painel de Evidências Científicas sobre Tratamento Farmacológico e Vacinas - COVID-19')
 @section('conteudo')
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -61,7 +61,7 @@
               <h6 class="card-subtitle mb-2" style="color:#009e39"><b>Tecnologias</b></h6>
             </div>
             <div class="col-6">
-              <p class="display-5 pt-3">652</p>
+              <p class="display-5 pt-3">564</p>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
               <h6 class="card-subtitle mb-2" style="color:#e21a2a"><b>PLN</b></h6>
             </div>
             <div class="col-6">
-              <p class="display-5 pt-3">70</p>
+              <p class="display-5 pt-3">72</p>
             </div>
           </div>
         </div>
@@ -89,25 +89,31 @@
 
   <!-- grafico -->
   <div class="col-6 my-2 col-xxl-6">
-    <h4>Publicações por data</h4>
+    <h4>Publicações por data  (n = 2147)</h4>
     <canvas class="my-4 w-100" id="g1" width="900" height="450"></canvas>
   </div>
 
+ <!-- grafico -->
+ <div class="col-6 my-2 col-xxl-6">
+    <h4>Relevância das publicações</h4>
+    <canvas class="my-4 w-100" id="g15" width="900" height="450"></canvas>
+  </div>
+
   <!-- grafico -->
-  <div class="col-6 my-2 col-xxl-6">
+  <div class="col-4 my-2 col-xxl-4">
     <h4>Publicações por Qualis (652/2147)</h4>
     <canvas class="my-4 w-100" id="g2" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
-  <div class="col-6 my-2 col-xxl-6">
-    <h4>Publicações por fator de impacto</h4>
+  <div class="col-4 my-2 col-xxl-4">
+    <h4>Publicações por fator de impacto (1145/2147)</h4>
     <canvas class="my-4 w-100" id="g3" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
-  <div class="col-6 my-2 col-xxl-6">
-    <h4>Publicações por h-index</h4>
+  <div class="col-4 my-2 col-xxl-4">
+    <h4>Publicações por h-index (1145/2147)</h4>
     <canvas class="my-4 w-100" id="g4" width="900" height="450"></canvas>
   </div>
 
@@ -123,6 +129,11 @@
     <canvas class="my-4 w-100" id="g6" width="900" height="450"></canvas>
   </div>
 
+  <!-- grafico -->
+  <div class="col-12 my-2 col-xxl-12">
+    <h4>Análise do processamento de linguagem natural (72)</h4>
+    <canvas class="my-4 w-100" id="g8" width="900" height="450"></canvas>
+  </div>
 
 </div>
 
