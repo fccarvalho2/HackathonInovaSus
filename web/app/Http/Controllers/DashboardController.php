@@ -15,7 +15,7 @@ class DashboardController extends Controller
     }
 
     public function febreamaerela(){
-        return view('febreamaerela');
+        return view('febreamarela');
     }
 
     public function dengue(){

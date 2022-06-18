@@ -37,7 +37,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
             <li><a class="dropdown-item" href="{{ url('/vm') }}">Varíola</a></li>
-            <li><a class="dropdown-item" href="{{ url('/febreamaerela') }}">Febrea amarela</a></li>
+            <li><a class="dropdown-item" href="{{ url('/febreamarela') }}">Febrea amarela</a></li>
             <li><a class="dropdown-item" href="{{ url('/dengue') }}">Dengue</a></li>
             <li><a class="dropdown-item" href="{{ url('/zika') }}">Zika</a></li>
             <li><a class="dropdown-item" href="{{ url('/hiv') }}">HIV</a></li>
