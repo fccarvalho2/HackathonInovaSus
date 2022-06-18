@@ -30,6 +30,20 @@
     <div class="navbar-nav">
       <div class="nav-item text-nowrap">
         <!-- <a class="nav-link px-3" href="#">Sair</a> -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mudar página
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="{{ url('/vm') }}">Varíola</a></li>
+            <li><a class="dropdown-item" href="{{ url('/febreamaerela') }}">Febrea amarela</a></li>
+            <li><a class="dropdown-item" href="{{ url('/dengue') }}">Dengue</a></li>
+            <li><a class="dropdown-item" href="{{ url('/zika') }}">Zika</a></li>
+            <li><a class="dropdown-item" href="{{ url('/hiv') }}">HIV</a></li>
+          </ul>
+        </li>
+
       </div>
     </div>
   </header>

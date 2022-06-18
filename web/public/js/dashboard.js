@@ -4,7 +4,7 @@
     'use strict'
   
     feather.replace({ 'aria-hidden': 'true' })
-  
+
     // gráfico - artigos por data ---------------------------------------
     const onde1 = document.getElementById('g1')
     const grafico1 = new Chart(onde1, {
@@ -27,7 +27,7 @@
         ],
         datasets: [{
           data: [
-            5,
+            5000,
             9,
             47,
             337,
