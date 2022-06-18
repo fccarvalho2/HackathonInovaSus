@@ -89,49 +89,57 @@
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xl-6">
-    <h4>Publicações por data  (n = 2147)</h4>
+    <h4>Publicações por data (n = 2147)</h4>
+    <p class="text-muted small">Este gráfico apresenta a quantidade de artigos coletados por data de publicação. Dados foram coletados no <a href="https://infoms.saude.gov.br/extensions/evidencias_covid/evidencias_covid.html">Painel de Evidências Científicas</a>.</p> 
     <canvas class="my-4 w-100" id="g1" width="900" height="450"></canvas>
   </div>
 
  <!-- grafico -->
  <div class="col-12 my-2 col-xl-6">
     <h4>Relevância das publicações</h4>
+    <p class="text-muted small">Este gráfico apresenta a distribuição de artigos avaliados no painel com base nos periódicos de publicação. Aqui podemos ver que boa parte dos dados utilizados nessa base veio de meios de publicação sem grande impacto científico.</p>
     <canvas class="my-4 w-100" id="g15" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xl-6">
     <h4>Publicações por Qualis (652/2147)</h4>
+    <p class="text-muted small">Este gráfico apresenta a distribuição de artigos avaliados no painel com base nos periódicos de publicação. Aqui podemos ver a distruição dos periódicos com base nos estratos Qualis (para mais informações acesse o site da <a href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/veiculoPublicacaoQualis/listaConsultaGeralPeriodicos.jsf">CAPES</a>).</p>
     <canvas class="my-4 w-100" id="g2" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xl-6">
     <h4>Publicações por fator de impacto (1145/2147)</h4>
+    <p class="text-muted small">Este gráfico apresenta a distribuição de artigos avaliados no painel com base nos periódicos de publicação. Aqui podemos ver a distruição dos periódicos com base na pontuação JCR - Journal Citation Reports (para mais informações acesse o site da <a href="https://clarivate.com/webofsciencegroup/solutions/journal-citation-reports/">JCR Clarivate</a>).</p>
     <canvas class="my-4 w-100" id="g3" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xl-6">
     <h4>Publicações por média de citações (últimos 3 anos)</h4>
+    <p class="text-muted small">Este gráfico apresenta a distribuição de artigos avaliados no painel com base nos periódicos de publicação. Aqui podemos ver a distruição dos periódicos com base na média de citações dos últimos três anos (para mais informações acesse o site da <a href="https://clarivate.com/webofsciencegroup/solutions/journal-citation-reports/">JCR Clarivate</a>).</p>
     <canvas class="my-4 w-100" id="g35" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xl-6">
     <h4>Publicações por h-index (1145/2147)</h4>
+    <p class="text-muted small">Este gráfico apresenta a distribuição de artigos avaliados no painel com base nos periódicos de publicação. Aqui podemos ver a distruição dos artigos com base h-index da revista (para mais informações acesse o site da <a href="https://clarivate.com/webofsciencegroup/solutions/journal-citation-reports/">JCR Clarivate</a>).</p>
     <canvas class="my-4 w-100" id="g4" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xl-6">
     <h4>Tecnologias mais citadas (20)</h4>
+    <p class="text-muted small">Este gráfico apresenta as "tecnologias" mais citadas com base nas informações disponíveis no <a href="https://infoms.saude.gov.br/extensions/evidencias_covid/evidencias_covid.html">Painel de Evidências Científicas sobre Tratamento Farmacológico e Vacinas</a>.</p> 
     <canvas class="my-4 w-100" id="g5" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
   <div class="col-12 my-2 col-xxl-6">
     <h4>Tecnologias em artigos com impacto (20)</h4>
+    <p class="text-muted small">Este gráfico apresenta as "tecnologias" mais citadas com base nas informações disponíveis no <a href="https://infoms.saude.gov.br/extensions/evidencias_covid/evidencias_covid.html">Painel de Evidências Científicas sobre Tratamento Farmacológico e Vacinas</a>. Foram filtradas apenas artigos publicados em periódicos.</p> 
     <canvas class="my-4 w-100" id="g6" width="900" height="450"></canvas>
   </div>
 
@@ -142,6 +150,7 @@
       <span style="background:#ffa500" class="p-1 px-3 m-2 rounded"> </span> Tendência desfavorável/neutro
       <span style="background:#1e90ff" class="p-1 px-3 m-2 rounded"> </span> Tendência favorável
     </p>
+    <p class="text-muted small">Esta análise indica tendências os resultados das análises de sentimento obtidas das técnicas de processamento de linguagem natural dos artigos. Barras laranjas indicam tendências negativas/neutras, enquanto as azuis indicam positivas.</p> 
     <canvas class="my-4 w-100" id="g8" width="900" height="450"></canvas>
   </div>
 
