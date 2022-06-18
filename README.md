@@ -1,4 +1,4 @@
-# Hackathon Inovadados SUS
+# Hackathon Inovadados SUS: Painel SimplificaSUS
 Repositório de armazenamento dos dados e códigos fonte usados no Hackathon Inovadados SUS 2022.
 
 **Autores:** Frederico Carvalho, Diego Mariano, Marcos Matos
