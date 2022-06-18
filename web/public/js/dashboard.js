@@ -85,7 +85,7 @@ const grafico15 = new Chart(onde15, {
         ]
       ,
       lineTension: 0,
-      backgroundColor: ['grey', '#1e90ff', '#ffa500', '#1e90ff', '#ffa500' ],
+      backgroundColor: ['#3cb371', '#1e90ff', '#ffa500', '#1e90ff', '#ffa500' ],
       fill: '#1e90ff',
       //borderColor: '#1e90ff',
       //borderWidth: 4,
