@@ -20,7 +20,8 @@
 
   <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
 
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="{{ url('/') }}">Painel Inovasus (CoViD-19)</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="{{ url('/') }}">
+      <img src="{{ url('/img/logo.svg') }}" style="max-width:220px"></a>
 
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,17 +32,16 @@
       <div class="nav-item text-nowrap">
         <!-- <a class="nav-link px-3" href="#">Sair</a> -->
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown me-5">
           <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Mudar página
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="position:absolute">
           <li><a class="dropdown-item" href="{{ url('/') }}">CoViD-19</a></li>
             <li><a class="dropdown-item" href="{{ url('/vm') }}">Varíola</a></li>
             <li><a class="dropdown-item" href="{{ url('/febreamarela') }}">Febrea amarela</a></li>
             <li><a class="dropdown-item" href="{{ url('/dengue') }}">Dengue</a></li>
             <li><a class="dropdown-item" href="{{ url('/zika') }}">Zika</a></li>
-            <li><a class="dropdown-item" href="{{ url('/hiv') }}">HIV</a></li>
           </ul>
         </li>
 

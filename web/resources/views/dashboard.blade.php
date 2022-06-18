@@ -1,6 +1,7 @@
 @extends('template')
 @section('titulo', 'Novo Painel de Evidências Científicas sobre Tratamento Farmacológico e Vacinas - COVID-19')
 @section('conteudo')
+<h2 class="mt-4"><label class="badge bg-primary">CoViD-19</label> Painel de Evidências Científicas</h2>
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
   <!-- <h1 class="h2">Painel SUS</h1>
@@ -15,7 +16,7 @@
     </button> 
   </div></div> -->
 
-  <div class="row g-3 container-fluid my-4 text-muted">
+  <div class="row g-3 container-fluid mt-2 mb-4 text-muted">
 
     <!-- cada card -->
     <div class="col">
@@ -74,8 +75,8 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-6 col-12 text-center">
-              <h5 class="card-title display-4" style="color:#e21a2a"><i class="bi bi-chat-square-quote-fill"></i></h5>
-              <h6 class="card-subtitle mb-2" style="color:#e21a2a"><b>PLN</b></h6>
+              <h5 class="card-title display-4" style="color:#e21a2a" title="PLN: Processamento de Linguagem Natural"><i class="bi bi-chat-square-quote-fill"></i></h5>
+              <h6 class="card-subtitle mb-2" style="color:#e21a2a" title="PLN: Processamento de Linguagem Natural"><b>PLN</b></h6>
             </div>
             <div class="col-md-6 col-12">
               <p class="display-5 pt-3">72</p>

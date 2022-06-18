@@ -2,7 +2,7 @@
 @section('titulo', 'Novo Painel de Evidências Científicas sobre Tratamento Farmacológico e Vacinas - COVID-19')
 @section('conteudo')
 
-<h1>OUTRA PÁGINA</h1>
+<h1 class="m-4"><label class="badge bg-warning">Varíola</label> EM DESENVOLVIMENTO</h1>
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
   <!-- <h1 class="h2">Painel SUS</h1>
@@ -29,7 +29,7 @@
               <h6 class="card-subtitle mb-2" style="color:#007bb1"><b>Artigos</b></h6>
             </div>
             <div class="col-6">
-              <p class="display-5 pt-3">2147</p>
+              <p class="display-5 pt-3">-</p>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
               <h6 class="card-subtitle mb-2" style="color:#ff7925"><b>Qualis A</b></h6>
             </div>
             <div class="col-6">
-              <p class="display-5 pt-3">652</p>
+              <p class="display-5 pt-3">-</p>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
               <h6 class="card-subtitle mb-2" style="color:#009e39"><b>Tecnologias</b></h6>
             </div>
             <div class="col-6">
-              <p class="display-5 pt-3">564</p>
+              <p class="display-5 pt-3">-</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
               <h6 class="card-subtitle mb-2" style="color:#e21a2a"><b>PLN</b></h6>
             </div>
             <div class="col-6">
-              <p class="display-5 pt-3">72</p>
+              <p class="display-5 pt-3">-</p>
             </div>
           </div>
         </div>
