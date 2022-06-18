@@ -106,13 +106,13 @@
   </div>
 
   <!-- grafico -->
-  <div class="col-6 my-2 col-xl-6">
+  <div class="col-12 my-2 col-xl-6">
     <h4>Publicações por fator de impacto (1145/2147)</h4>
     <canvas class="my-4 w-100" id="g3" width="900" height="450"></canvas>
   </div>
 
   <!-- grafico -->
-  <div class="col-6 my-2 col-xl-6">
+  <div class="col-12 my-2 col-xl-6">
     <h4>Publicações por média de citações (últimos 3 anos)</h4>
     <canvas class="my-4 w-100" id="g35" width="900" height="450"></canvas>
   </div>
