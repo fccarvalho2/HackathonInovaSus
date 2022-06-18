@@ -57,7 +57,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-6 col-12 text-center">
-              <h5 class="card-title display-4" style="color:#009e39"><i class="bi bi-slash-circle"></i></h5>
+              <h5 class="card-title display-4" style="color:#009e39"><i class="bi bi-slash-circle-fill"></i></h5>
               <h6 class="card-subtitle mb-2" style="color:#009e39"><b>Tecnologias</b></h6>
             </div>
             <div class="col-md-6 col-12">

@@ -36,6 +36,7 @@
             Mudar página
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+          <li><a class="dropdown-item" href="{{ url('/') }}">CoViD-19</a></li>
             <li><a class="dropdown-item" href="{{ url('/vm') }}">Varíola</a></li>
             <li><a class="dropdown-item" href="{{ url('/febreamarela') }}">Febrea amarela</a></li>
             <li><a class="dropdown-item" href="{{ url('/dengue') }}">Dengue</a></li>

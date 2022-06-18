@@ -16,7 +16,7 @@ use App\Http\Controllers\DashboardController;
 
 Route::get('/', [DashboardController::class, 'dashboard']);
 Route::get('/vm', [DashboardController::class, 'vm']);
-Route::get('/febreamaerela', [DashboardController::class, 'febreamaerela']);
+Route::get('/febreamarela', [DashboardController::class, 'febreamaerela']);
 Route::get('/dengue', [DashboardController::class, 'dengue']);
 Route::get('/zika', [DashboardController::class, 'zika']);
 Route::get('/hiv', [DashboardController::class, 'hiv']);
