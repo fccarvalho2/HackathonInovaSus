@@ -1,5 +1,5 @@
 @extends('template')
-@section('titulo', 'Novo Painel de Evidências Científicas sobre Tratamento Farmacológico e Vacinas - COVID-19')
+@section('titulo', 'SimplificaSUS - Painel de Evidências Científicas COVID-19')
 @section('conteudo')
 <h2 class="mt-4"><label class="badge bg-primary">CoViD-19</label> Painel de Evidências Científicas</h2>
 
