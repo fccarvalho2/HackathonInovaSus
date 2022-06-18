@@ -21,4 +21,4 @@ Route::get('/dengue', [DashboardController::class, 'dengue']);
 Route::get('/zika', [DashboardController::class, 'zika']);
 Route::get('/hiv', [DashboardController::class, 'hiv']);
 
-Route::get('/video_institucional', fn()=>redirect('https://www.youtube.com/watch?v=jGSGNRaYoeQ')); 
+Route::get('/video_institucional', fn()=>redirect('https://www.youtube.com/watch?v=wsjbsUG1IkM')); 
